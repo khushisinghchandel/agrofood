@@ -18,9 +18,7 @@ a {
     text-decoration: none;
 }
 
-/* =========================================
-   NAVBAR
-========================================= */
+
 
 .navbar {
     height: 147px;
@@ -33,7 +31,7 @@ a {
     z-index: 10;
 }
 
-/* Left navigation */
+
 .nav-left {
     position: absolute;
     left: calc(50% - 545px);
@@ -41,7 +39,7 @@ a {
     gap: 52px;
 }
 
-/* Right navigation */
+
 .nav-right {
     position: absolute;
     right: calc(50% - 545px);
@@ -49,7 +47,7 @@ a {
     gap: 52px;
 }
 
-/* Navigation links */
+
 .navbar a {
     font-size: 22px;
     font-weight: 600;
@@ -65,7 +63,7 @@ a {
     color: #814333;
 }
 
-/* Logo */
+
 .logo {
     position: absolute;
     left: 50%;
@@ -80,9 +78,6 @@ a {
 }
 
 
-/* =========================================
-   CONTACT HERO
-========================================= */
 
 .contact-hero {
     height: 748px;
@@ -142,9 +137,6 @@ a {
 }
 
 
-/* =========================================
-   CONTACT FORM SECTION
-========================================= */
 
 .contact-section {
     padding: 160px 0 105px;
@@ -261,9 +253,6 @@ a {
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
 
 .footer {
     position: relative;
@@ -275,12 +264,12 @@ a {
     background: #ffffff;
 }
 
-/* Footer columns */
+
 .footer-column {
     text-align: center;
 }
 
-/* Address */
+
 .address {
     padding-top: 25px;
 }
@@ -292,14 +281,14 @@ a {
     color: #814333;
 }
 
-/* Footer center logo */
+
 .contact img {
     width: 215px;
     display: block;
     margin: 0 auto 45px;
 }
 
-/* Horizontal line */
+
 .line {
     height: 1px;
     width: 100%;
@@ -307,7 +296,7 @@ a {
     margin-bottom: -15px;
 }
 
-/* Call text */
+
 .call-text {
     background: white;
     display: inline-block;
@@ -318,7 +307,7 @@ a {
     letter-spacing: 4px;
 }
 
-/* Phone */
+
 .contact h2 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 42px;
@@ -326,7 +315,7 @@ a {
     color: #814333;
 }
 
-/* Found us */
+
 .contact h4 {
     margin-top: 45px;
     font-size: 18px;
@@ -334,7 +323,7 @@ a {
     color: #814333;
 }
 
-/* Social */
+
 .socials {
     margin-top: 40px;
     display: flex;
@@ -344,7 +333,7 @@ a {
     font-size: 18px;
 }
 
-/* About */
+
 .about {
     text-align: left;
     padding-top: 5px;
@@ -364,7 +353,7 @@ a {
     max-width: 310px;
 }
 
-/* Copyright */
+
 .copyright {
     position: absolute;
     bottom: 25px;
@@ -376,9 +365,6 @@ a {
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
 
 @media (max-width: 1000px) {
 
@@ -494,7 +480,7 @@ a {
 }
 
 
-/* Accessibility helper */
+
 .sr-only {
     position: absolute;
     width: 1px;
