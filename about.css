@@ -1,0 +1,1059 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: #3f587a;
+    font-family: "DM Sans", Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    height: 147px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    background: #ffffff;
+
+    z-index: 10;
+}
+
+
+/* Left navigation */
+
+.nav-left {
+    position: absolute;
+    left: calc(50% - 545px);
+
+    display: flex;
+    gap: 52px;
+}
+
+
+/* Right navigation */
+
+.nav-right {
+    position: absolute;
+    right: calc(50% - 545px);
+
+    display: flex;
+    gap: 52px;
+}
+
+
+/* Navigation links */
+
+.navbar a {
+    font-size: 22px;
+    font-weight: 600;
+
+    color: #c86b16;
+
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #814333;
+}
+
+.navbar a.active {
+    color: #814333;
+}
+
+
+/* Logo */
+
+.logo {
+    position: absolute;
+
+    left: 50%;
+    top: 8px;
+
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: 205px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   COMMON SECTION STYLES
+========================================================= */
+
+.section-container {
+    width: min(1120px, 88%);
+    margin: 0 auto;
+}
+
+.main-heading,
+.section-heading,
+.large-heading,
+.stats-heading {
+    font-family:
+        "Playfair Display",
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    color: #814333;
+}
+
+
+/* =========================================================
+   WHO WE ARE
+========================================================= */
+
+.who-we-are {
+    padding-top: 45px;
+    padding-bottom: 125px;
+
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 56px;
+    line-height: 1.15;
+
+    margin-bottom: 65px;
+}
+
+.intro-text {
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.intro-text p {
+    font-size: 24px;
+    line-height: 1.55;
+
+    color: #814333;
+
+    margin-bottom: 30px;
+}
+
+.intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   DIRECTOR SECTION
+========================================================= */
+
+.director-section {
+    padding-bottom: 130px;
+}
+
+.director-title {
+    font-size: 52px;
+    margin-bottom: 70px;
+}
+
+.director-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* Director image placeholder */
+
+.director-image-placeholder {
+    width: 100%;
+    height: 440px;
+
+    background: #f7f7f7;
+
+    border: 1px solid #eeeeee;
+
+    position: relative;
+}
+
+
+/*
+    When you are ready to add the director image:
+
+    .director-image-placeholder {
+        background:
+            url("images/director.jpg")
+            center / cover no-repeat;
+    }
+
+    OR place an <img> inside the div.
+*/
+
+
+.director-message {
+    padding: 20px 0;
+}
+
+.quote {
+    font-family:
+        "Playfair Display",
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 26px;
+    line-height: 1.6;
+
+    color: #814333;
+}
+
+.director-info {
+    margin-top: 55px;
+    text-align: center;
+}
+
+.director-info h2 {
+    font-family:
+        "Playfair Display",
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 48px;
+
+    color: #814333;
+
+    margin-bottom: 12px;
+}
+
+.director-info p {
+    font-family:
+        "Playfair Display",
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 30px;
+
+    color: #814333;
+}
+
+
+/* =========================================================
+   TWO COLUMN SECTIONS
+========================================================= */
+
+.two-column-section {
+    width: min(1260px, 86%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   IMAGE STYLES
+========================================================= */
+
+.image-side {
+    width: 100%;
+}
+
+.content-image {
+    width: 100%;
+    height: 560px;
+
+    overflow: hidden;
+
+    background: #f3f3f3;
+}
+
+.content-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.content-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   TEXT SIDE
+========================================================= */
+
+.text-side {
+    width: 100%;
+}
+
+.large-heading {
+    font-size: 56px;
+    line-height: 1.05;
+
+    margin-bottom: 45px;
+}
+
+.text-side p {
+    color: #3f587a;
+
+    font-size: 21px;
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.text-side p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   MISSION
+========================================================= */
+
+.mission-section {
+    padding: 100px 0 160px;
+    background: #ffffff;
+}
+
+.mission-image {
+    height: 620px;
+}
+
+
+/* =========================================================
+   TECHNOLOGY
+========================================================= */
+
+.technology-section {
+    padding: 100px 0 160px;
+    background: #ffffff;
+}
+
+.technology-image {
+    height: 620px;
+}
+
+
+/* =========================================================
+   MILLING PROCESS
+========================================================= */
+
+.milling-section {
+    padding: 80px 0 170px;
+    background: #ffffff;
+}
+
+.milling-image {
+    height: 620px;
+}
+
+
+/* =========================================================
+   OUR VISION
+========================================================= */
+
+.vision-section {
+    padding: 50px 0 170px;
+    background: #ffffff;
+}
+
+.vision-left {
+    width: 100%;
+}
+
+.vision-left .large-heading {
+    margin-bottom: 60px;
+}
+
+.vision-image {
+    height: 450px;
+}
+
+.vision-text {
+    padding-top: 100px;
+}
+
+.vision-text p {
+    margin-bottom: 40px;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.statistics-section {
+    padding: 120px 0 135px;
+    background: #ffffff;
+}
+
+.stats-container {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+}
+
+.stats-heading {
+    text-align: center;
+
+    font-size: 76px;
+    line-height: 1.1;
+
+    margin-bottom: 115px;
+}
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 50px;
+
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-family:
+        "Playfair Display",
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 72px;
+    line-height: 1;
+
+    color: #814333;
+
+    margin-bottom: 45px;
+}
+
+.stat-box p {
+    font-family:
+        "Playfair Display",
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    color: #814333;
+
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    position: relative;
+
+    min-height: 650px;
+
+    padding: 115px 12% 90px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    column-gap: 70px;
+
+    background: #ffffff;
+}
+
+
+/* Footer columns */
+
+.footer-column {
+    text-align: center;
+}
+
+
+/* Address */
+
+.address {
+    padding-top: 25px;
+}
+
+.address p {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 23px;
+    line-height: 1.5;
+
+    color: #814333;
+}
+
+
+/* Footer center logo */
+
+.contact img {
+    width: 215px;
+
+    display: block;
+
+    margin: 0 auto 45px;
+}
+
+
+/* Horizontal line */
+
+.line {
+    height: 1px;
+
+    width: 100%;
+
+    background: #e4e4e4;
+
+    margin-bottom: -15px;
+}
+
+
+/* Call text */
+
+.call-text {
+    background: white;
+
+    display: inline-block;
+
+    padding: 0 20px;
+
+    position: relative;
+
+    color: #814333;
+
+    font-size: 18px;
+
+    letter-spacing: 4px;
+}
+
+
+/* Phone */
+
+.contact h2 {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 42px;
+
+    margin-top: 30px;
+
+    color: #814333;
+}
+
+
+/* Found us */
+
+.contact h4 {
+    margin-top: 45px;
+
+    font-size: 18px;
+
+    letter-spacing: 3px;
+
+    color: #814333;
+}
+
+
+/* Social */
+
+.socials {
+    margin-top: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    color: #3f587a;
+
+    font-size: 18px;
+}
+
+
+/* About */
+
+.about {
+    text-align: left;
+
+    padding-top: 5px;
+}
+
+.about h2 {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 48px;
+
+    color: #814333;
+
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #3f587a;
+
+    font-size: 20px;
+
+    line-height: 1.55;
+
+    max-width: 310px;
+}
+
+
+/* Copyright */
+
+.copyright {
+    position: absolute;
+
+    bottom: 25px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #3f587a;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .nav-left {
+        left: 5%;
+    }
+
+    .nav-right {
+        right: 5%;
+    }
+
+    .two-column-section {
+        width: 90%;
+        gap: 60px;
+    }
+
+    .stats-heading {
+        font-size: 65px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    /* Navbar */
+
+    .navbar {
+        height: 120px;
+    }
+
+    .nav-left {
+        left: 5%;
+        gap: 20px;
+    }
+
+    .nav-right {
+        right: 5%;
+        gap: 20px;
+    }
+
+    .navbar a {
+        font-size: 17px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+
+    /* About */
+
+    .main-heading {
+        font-size: 48px;
+    }
+
+    .intro-text p {
+        font-size: 20px;
+    }
+
+
+    /* Director */
+
+    .director-title {
+        font-size: 45px;
+    }
+
+    .director-content {
+        gap: 40px;
+    }
+
+    .quote {
+        font-size: 22px;
+    }
+
+
+    /* Two columns */
+
+    .two-column-section {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .text-side {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .image-side {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+
+    /* Mission */
+
+    .mission-section,
+    .technology-section,
+    .milling-section,
+    .vision-section {
+
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+
+    /* Vision */
+
+    .vision-text {
+        padding-top: 0;
+    }
+
+
+    /* Statistics */
+
+    .stats-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        row-gap: 80px;
+    }
+
+    .stats-heading {
+        font-size: 58px;
+        margin-bottom: 80px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about p {
+        margin: auto;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    /* Navbar */
+
+    .navbar {
+        height: 100px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
+
+    /* General */
+
+    .section-container {
+        width: 88%;
+    }
+
+
+    /* Who We Are */
+
+    .who-we-are {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .main-heading {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .intro-text p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+
+    /* Director */
+
+    .director-section {
+        padding-bottom: 80px;
+    }
+
+    .director-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .director-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .director-image-placeholder {
+        height: 380px;
+    }
+
+    .quote {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .director-info {
+        margin-top: 35px;
+    }
+
+    .director-info h2 {
+        font-size: 34px;
+    }
+
+    .director-info p {
+        font-size: 23px;
+    }
+
+
+    /* Two column sections */
+
+    .two-column-section {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    /* Images */
+
+    .content-image {
+        height: 400px;
+    }
+
+
+    /* Headings */
+
+    .large-heading {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+
+
+    /* Paragraph */
+
+    .text-side p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+
+    /* Sections */
+
+    .mission-section,
+    .technology-section,
+    .milling-section,
+    .vision-section {
+
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+
+    /* Vision */
+
+    .vision-left .large-heading {
+        margin-bottom: 35px;
+    }
+
+    .vision-text {
+        padding-top: 0;
+    }
+
+
+    /* Statistics */
+
+    .statistics-section {
+        padding: 80px 0;
+    }
+
+    .stats-heading {
+        font-size: 43px;
+        margin-bottom: 65px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 65px;
+    }
+
+    .stat-box h3 {
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+
+    .stat-box p {
+        font-size: 21px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        padding-left: 8%;
+        padding-right: 8%;
+
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .address p {
+        font-size: 20px;
+    }
+
+    .contact img {
+        width: 170px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+    }
+
+    .about h2 {
+        font-size: 38px;
+    }
+
+    .about p {
+        font-size: 17px;
+    }
+
+    .copyright {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .main-heading {
+        font-size: 34px;
+    }
+
+    .large-heading {
+        font-size: 36px;
+    }
+
+    .director-title {
+        font-size: 31px;
+    }
+
+    .stats-heading {
+        font-size: 37px;
+    }
+
+    .content-image {
+        height: 330px;
+    }
+
+    .director-image-placeholder {
+        height: 330px;
+    }
+}
