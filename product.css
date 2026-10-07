@@ -372,23 +372,34 @@ a {
     color: #814333;
 }
 
-
 /* Social */
 
 .socials {
     margin-top: 40px;
-
     display: flex;
-
     justify-content: center;
-
+    align-items: center;
     gap: 25px;
-
-    color: #3f587a;
-
-    font-size: 18px;
 }
 
+.socials a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3f5778;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.socials i {
+    font-size: 27px;
+    color: #000;
+    margin-right: 5px;
+}
+
+.socials a:hover {
+    color: #814333;
+}
 
 /* About */
 
